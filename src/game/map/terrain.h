@@ -1,8 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-class Terrain {
-
+class Terrain 
+{
     private:
         sf::Texture* texture;
 
