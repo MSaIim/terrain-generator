@@ -31,9 +31,6 @@
     <ClInclude Include="src\game\core\graphics.h" />
     <ClInclude Include="src\game\map\terrain.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="src\game\assets\icon.png" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{CCBC4B27-F954-44B2-974E-3AD6D3DF8552}</ProjectGuid>
@@ -129,8 +126,7 @@
       <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>start XCOPY /Y /R "$(SolutionDir)src\game\assets\*" "$(ProjectDir)bin\$(Platform)\$(ConfigurationName)\assets"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -168,8 +164,7 @@
       <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>start XCOPY /Y /R "$(SolutionDir)src\game\assets\*" "$(ProjectDir)bin\$(Platform)\$(ConfigurationName)\assets"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

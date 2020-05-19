@@ -57,9 +57,4 @@
       <Filter>Header Files\core</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="src\game\assets\icon.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
 </Project>

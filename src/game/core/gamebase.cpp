@@ -15,7 +15,7 @@ GameBase::GameBase(): window(sf::VideoMode(0, 0), "", sf::Style::Titlebar | sf::
 
     // Set window icon
     sf::Image icon;
-    icon.loadFromFile("src/game/assets/icon.png");
+    icon.loadFromFile("assets/icon.png");
     this->window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 
     // Let the graphics instance use the window
