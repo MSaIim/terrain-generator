@@ -20,5 +20,5 @@ class FPS
         FPS();
         ~FPS();
 
-        const sf::Text &getFps(const std::string& preText = "");
+        const sf::Text &getFps(const std::string &preText = "");
 };

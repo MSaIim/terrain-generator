@@ -20,5 +20,5 @@ class Debug
         static Debug& getInstance();
 
         // Debug options
-        const sf::Text &getFps(const std::string& preText = "");
+        const sf::Text &getFps(const std::string &preText = "");
 };

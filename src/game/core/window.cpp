@@ -6,7 +6,6 @@ Window::Window(): x(0), y(0), width(1400), height(900), title("Aegis Terrain Gen
 
     // Create the window
     this->window.create(sf::VideoMode(width, height), title, sf::Style::Titlebar | sf::Style::Close);
-    this->window.setSize(sf::Vector2u(width, height));
     this->window.setVerticalSyncEnabled(verticalSyncEnabled);
 
     // Set to center screen
@@ -16,7 +15,7 @@ Window::Window(): x(0), y(0), width(1400), height(900), title("Aegis Terrain Gen
 
     // Set window icon
     sf::Image icon;
-    icon.loadFromFile(Images::APP_ICON);
+    icon.loadFromFile(ImagePaths::APP_ICON);
     this->window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 }
 

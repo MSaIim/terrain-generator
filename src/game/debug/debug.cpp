@@ -7,7 +7,7 @@ Debug& Debug::getInstance() {
     return instance;
 }
 
-const sf::Text &Debug::getFps(const std::string& preText) {
+const sf::Text &Debug::getFps(const std::string &preText) {
     return this->fps.getFps(preText);
 }
 
