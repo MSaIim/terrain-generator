@@ -1,25 +1,7 @@
-#pragma once
-#include "gamebase.h"
+#include "game_base.h"
 
-GameBase::GameBase(): window(sf::VideoMode(0, 0), "", sf::Style::Titlebar | sf::Style::Close) {
-    // Set window properties
-    this->window.setVisible(false);
-    this->window.setSize(sf::Vector2u(800, 600));
-    this->window.setTitle("Aegis Terrain Generator");
-    this->window.setVerticalSyncEnabled(true);
-
-    // Set to center screen
-    auto desktopSize = sf::VideoMode::getDesktopMode();
-    auto windowSize = this->window.getSize();
-    this->window.setPosition(sf::Vector2i(desktopSize.width / 2 - windowSize.x / 2, desktopSize.height / 2 - windowSize.y / 2));
-
-    // Set window icon
-    sf::Image icon;
-    icon.loadFromFile("assets/icon.png");
-    this->window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
-
-    // Let the graphics instance use the window
-    Graphics::getInstance().setWindow(&this->window);
+GameBase::GameBase() {
+    Graphics::getInstance().setWindow(&this->window.getRenderer());
 }
 
 const bool GameBase::run() {
@@ -37,7 +19,7 @@ const bool GameBase::run() {
     while (true) {
         // Capture the input events
         sf::Event event;
-        this->window.pollEvent(event);
+        this->window.getRenderer().pollEvent(event);
 
         // Implement fixed time step
         const float newTime = clock.getElapsedTime().asMilliseconds() / 1000.0f;

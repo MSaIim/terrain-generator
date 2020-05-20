@@ -25,6 +25,15 @@
     <Filter Include="Header Files\core">
       <UniqueIdentifier>{0374141a-f951-43a3-87ec-b9d4cff41a3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\debug">
+      <UniqueIdentifier>{9dd0e7a2-f90e-45e3-aba6-fb2fe92c11c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debug">
+      <UniqueIdentifier>{04fcdabd-61ef-4038-92e1-74623975ef98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\globals">
+      <UniqueIdentifier>{287c657d-0339-4cbe-a4fd-008c5421a650}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game\main.cpp">
@@ -33,13 +42,25 @@
     <ClCompile Include="src\game\map\terrain.cpp">
       <Filter>Source Files\map</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\core\gamebase.cpp">
-      <Filter>Source Files\core</Filter>
-    </ClCompile>
     <ClCompile Include="src\game\core\game.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
     <ClCompile Include="src\game\core\graphics.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\debug\debug.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\core\game_base.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\core\resource_manager.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\debug\fps.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\core\window.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,13 +68,28 @@
     <ClInclude Include="src\game\map\terrain.h">
       <Filter>Header Files\map</Filter>
     </ClInclude>
-    <ClInclude Include="src\game\core\gamebase.h">
-      <Filter>Header Files\core</Filter>
-    </ClInclude>
     <ClInclude Include="src\game\core\game.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
     <ClInclude Include="src\game\core\graphics.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\debug\fps.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\debug\debug.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\core\resource_manager.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\core\game_base.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\globals\constants.h">
+      <Filter>Header Files\globals</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\core\window.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
   </ItemGroup>

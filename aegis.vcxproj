@@ -20,15 +20,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game\core\game.cpp" />
-    <ClCompile Include="src\game\core\gamebase.cpp" />
+    <ClCompile Include="src\game\core\game_base.cpp" />
     <ClCompile Include="src\game\core\graphics.cpp" />
+    <ClCompile Include="src\game\core\resource_manager.cpp" />
+    <ClCompile Include="src\game\core\window.cpp" />
+    <ClCompile Include="src\game\debug\debug.cpp" />
+    <ClCompile Include="src\game\debug\fps.cpp" />
     <ClCompile Include="src\game\main.cpp" />
     <ClCompile Include="src\game\map\terrain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game\core\game.h" />
-    <ClInclude Include="src\game\core\gamebase.h" />
+    <ClInclude Include="src\game\core\game_base.h" />
     <ClInclude Include="src\game\core\graphics.h" />
+    <ClInclude Include="src\game\core\resource_manager.h" />
+    <ClInclude Include="src\game\core\window.h" />
+    <ClInclude Include="src\game\debug\debug.h" />
+    <ClInclude Include="src\game\debug\fps.h" />
+    <ClInclude Include="src\game\globals\constants.h" />
     <ClInclude Include="src\game\map\terrain.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -126,7 +135,7 @@
       <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>start XCOPY /Y /R "$(SolutionDir)src\game\assets\*" "$(ProjectDir)bin\$(Platform)\$(ConfigurationName)\assets"</Command>
+      <Command>start XCOPY /Y /R /E "$(SolutionDir)src\game\assets\*" "$(ProjectDir)bin\$(Platform)\$(ConfigurationName)\assets"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -164,7 +173,7 @@
       <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>start XCOPY /Y /R "$(SolutionDir)src\game\assets\*" "$(ProjectDir)bin\$(Platform)\$(ConfigurationName)\assets"</Command>
+      <Command>start XCOPY /Y /R /E "$(SolutionDir)src\game\assets\*" "$(ProjectDir)bin\$(Platform)\$(ConfigurationName)\assets"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

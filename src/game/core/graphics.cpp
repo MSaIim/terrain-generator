@@ -7,8 +7,7 @@ Graphics &Graphics::getInstance() {
     return instance;
 }
 
-void Graphics::setWindow(sf::RenderWindow *window)
-{
+void Graphics::setWindow(sf::RenderWindow *window) {
     this->window = window;
 }
 

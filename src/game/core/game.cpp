@@ -1,12 +1,8 @@
-#pragma once
-#include <SFML/Graphics.hpp>
 #include "game.h"
 
 Game::Game() { }
 
-void Game::setup() {
-    std::cout << "In Game setup!" << std::endl;
-}
+void Game::setup() { }
 
 const bool Game::update(const sf::Event event, const float tickRate) {
     if (event.type == sf::Event::Closed)
@@ -17,8 +13,7 @@ const bool Game::update(const sf::Event event, const float tickRate) {
 
 void Game::draw(const float alpha) {
     Graphics::getInstance().clear();
-
-
+    Graphics::getInstance().draw(Debug::getInstance().getFps("FPS: "));
     Graphics::getInstance().display();
 }
 

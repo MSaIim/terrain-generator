@@ -1,13 +1,12 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
-#include <iostream>
+#include "window.h"
 #include "graphics.h"
 
 class GameBase
 {
     private:
-        sf::RenderWindow window;
+        Window window;
 
     protected:
         // Sets up anything needed for the window.

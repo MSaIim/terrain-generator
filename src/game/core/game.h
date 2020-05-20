@@ -1,9 +1,12 @@
 #pragma once
-#include "gamebase.h"
+#include "game_base.h"
+#include "../debug/debug.h"
 #include <iostream>
+#include <string>
+#include <math.h>
 
 class Game : public GameBase
-{
+{      
     public:
         Game();
         ~Game();
