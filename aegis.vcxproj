@@ -25,14 +25,14 @@
     <ClCompile Include="src\game\core\resource_manager.cpp" />
     <ClCompile Include="src\game\core\screen_manager.cpp" />
     <ClCompile Include="src\game\core\window.cpp" />
-    <ClCompile Include="src\game\imgui\imgui-SFML.cpp" />
-    <ClCompile Include="src\game\imgui\imgui.cpp" />
-    <ClCompile Include="src\game\imgui\imgui_draw.cpp" />
-    <ClCompile Include="src\game\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\game\main.cpp" />
     <ClCompile Include="src\game\map\terrain.cpp" />
     <ClCompile Include="src\game\stats\debug_screen.cpp" />
     <ClCompile Include="src\game\stats\fps_counter.cpp" />
+    <ClCompile Include="src\vendor\imgui-1.76\imgui.cpp" />
+    <ClCompile Include="src\vendor\imgui-1.76\imgui_draw.cpp" />
+    <ClCompile Include="src\vendor\imgui-1.76\imgui_widgets.cpp" />
+    <ClCompile Include="src\vendor\imgui-sfml-2.1\imgui-SFML.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game\core\game.h" />

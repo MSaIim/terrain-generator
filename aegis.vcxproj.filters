@@ -69,16 +69,16 @@
     <ClCompile Include="src\game\stats\fps_counter.cpp">
       <Filter>Source Files\stats</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\imgui\imgui.cpp">
+    <ClCompile Include="src\vendor\imgui-1.76\imgui.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\imgui\imgui_draw.cpp">
+    <ClCompile Include="src\vendor\imgui-1.76\imgui_draw.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\imgui\imgui_widgets.cpp">
+    <ClCompile Include="src\vendor\imgui-1.76\imgui_widgets.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\imgui\imgui-SFML.cpp">
+    <ClCompile Include="src\vendor\imgui-sfml-2.1\imgui-SFML.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
   </ItemGroup>
