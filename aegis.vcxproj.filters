@@ -34,6 +34,9 @@
     <Filter Include="Header Files\globals">
       <UniqueIdentifier>{287c657d-0339-4cbe-a4fd-008c5421a650}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\imgui">
+      <UniqueIdentifier>{5670d7f9-25a6-4099-9163-1b0f722232bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game\main.cpp">
@@ -48,19 +51,34 @@
     <ClCompile Include="src\game\core\graphics.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\debug\debug.cpp">
-      <Filter>Source Files\debug</Filter>
-    </ClCompile>
     <ClCompile Include="src\game\core\game_base.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
     <ClCompile Include="src\game\core\resource_manager.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\debug\fps.cpp">
+    <ClCompile Include="src\game\core\window.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vendor\imgui-sfml-2.1\imgui-SFML.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vendor\imgui-1.76\imgui.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vendor\imgui-1.76\imgui_draw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vendor\imgui-1.76\imgui_widgets.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\debug\fps_counter.cpp">
       <Filter>Source Files\debug</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\core\window.cpp">
+    <ClCompile Include="src\game\debug\debug_screen.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\core\screen_manager.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,12 +92,6 @@
     <ClInclude Include="src\game\core\graphics.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
-    <ClInclude Include="src\game\debug\fps.h">
-      <Filter>Header Files\debug</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game\debug\debug.h">
-      <Filter>Header Files\debug</Filter>
-    </ClInclude>
     <ClInclude Include="src\game\core\resource_manager.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
@@ -90,6 +102,18 @@
       <Filter>Header Files\globals</Filter>
     </ClInclude>
     <ClInclude Include="src\game\core\window.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\debug\debug_screen.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\debug\fps_counter.h">
+      <Filter>Header Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\core\screen.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\core\screen_manager.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
   </ItemGroup>

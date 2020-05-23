@@ -23,20 +23,27 @@
     <ClCompile Include="src\game\core\game_base.cpp" />
     <ClCompile Include="src\game\core\graphics.cpp" />
     <ClCompile Include="src\game\core\resource_manager.cpp" />
+    <ClCompile Include="src\game\core\screen_manager.cpp" />
     <ClCompile Include="src\game\core\window.cpp" />
-    <ClCompile Include="src\game\debug\debug.cpp" />
-    <ClCompile Include="src\game\debug\fps.cpp" />
+    <ClCompile Include="src\game\debug\debug_screen.cpp" />
+    <ClCompile Include="src\game\debug\fps_counter.cpp" />
     <ClCompile Include="src\game\main.cpp" />
     <ClCompile Include="src\game\map\terrain.cpp" />
+    <ClCompile Include="src\vendor\imgui-1.76\imgui.cpp" />
+    <ClCompile Include="src\vendor\imgui-1.76\imgui_draw.cpp" />
+    <ClCompile Include="src\vendor\imgui-1.76\imgui_widgets.cpp" />
+    <ClCompile Include="src\vendor\imgui-sfml-2.1\imgui-SFML.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game\core\game.h" />
     <ClInclude Include="src\game\core\game_base.h" />
     <ClInclude Include="src\game\core\graphics.h" />
     <ClInclude Include="src\game\core\resource_manager.h" />
+    <ClInclude Include="src\game\core\screen.h" />
+    <ClInclude Include="src\game\core\screen_manager.h" />
     <ClInclude Include="src\game\core\window.h" />
-    <ClInclude Include="src\game\debug\debug.h" />
-    <ClInclude Include="src\game\debug\fps.h" />
+    <ClInclude Include="src\game\debug\debug_screen.h" />
+    <ClInclude Include="src\game\debug\fps_counter.h" />
     <ClInclude Include="src\game\globals\constants.h" />
     <ClInclude Include="src\game\map\terrain.h" />
   </ItemGroup>
@@ -126,7 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)src\vendor\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\vendor\SFML-2.5.1\include;$(SolutionDir)src\vendor\imgui-1.76;$(SolutionDir)src\vendor\imgui-sfml-2.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -162,7 +169,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)src\vendor\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src\vendor\SFML-2.5.1\include;$(SolutionDir)src\vendor\imgui-1.76;$(SolutionDir)src\vendor\imgui-sfml-2.1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

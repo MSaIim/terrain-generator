@@ -7,7 +7,7 @@ ResourceManager& ResourceManager::getInstance() {
     return instance;
 }
 
-const sf::Font &ResourceManager::loadFont(const std::string& filepath) {
+const sf::Font& ResourceManager::loadFont(const std::string& filepath) {
     if (this->fonts.count(filepath) == 0) {
         sf::Font *font = new sf::Font();
 

@@ -6,7 +6,6 @@ class ResourceManager
 {
     private:
         static ResourceManager instance;
-
         std::map<std::string, sf::Font*> fonts;
 
     public:

@@ -1,5 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "imgui.h"
+#include "imgui-SFML.h"
 #include "window.h"
 #include "graphics.h"
 
@@ -13,7 +15,7 @@ class GameBase
         virtual void setup() = 0;
 
         // Updates anything needed for the current class.
-        virtual const bool update(const sf::Event event, const float tickRate) = 0;
+        virtual const bool update(const sf::Event& event, const float tickRate) = 0;
 
         // Draws everything to the screen.
         virtual void draw(const float alpha) = 0;

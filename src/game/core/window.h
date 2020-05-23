@@ -23,6 +23,9 @@ class Window
         // Gets the window's renderer.
         sf::RenderWindow& getRenderer();
 
+        // Poll the events
+        const bool pollEvent(sf::Event& event);
+
         // Unhides the window.
         const void setVisible(bool isVisible);
 
@@ -37,4 +40,7 @@ class Window
 
         // Toggles vertical sync
         const void setVerticalSyncEnabled(bool isVerticalSyncEnabled);
+
+        // Close window
+        const void close();
 };

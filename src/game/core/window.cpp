@@ -23,6 +23,10 @@ sf::RenderWindow& Window::getRenderer() {
     return this->window;
 }
 
+const bool Window::pollEvent(sf::Event& event) {
+    return this->window.pollEvent(event);
+}
+
 const void Window::setVisible(bool isVisible) {
     this->window.setVisible(isVisible);
 }
@@ -46,6 +50,10 @@ const void Window::setPosition(const unsigned int x, const unsigned int y) {
 const void Window::setVerticalSyncEnabled(bool isVerticalSyncEnabled) {
     this->verticalSyncEnabled = isVerticalSyncEnabled;
     this->window.setVerticalSyncEnabled(isVerticalSyncEnabled);
+}
+
+const void Window::close() {
+    this->window.close();
 }
 
 Window::~Window() { }
