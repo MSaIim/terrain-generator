@@ -11,3 +11,8 @@ namespace ImagePaths
 {
     static const std::string APP_ICON = "assets/icon.png";
 }
+
+namespace ImGuiIds
+{
+    static const char* DEBUG = "Debug Menu";
+}

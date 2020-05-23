@@ -25,17 +25,17 @@
     <Filter Include="Header Files\core">
       <UniqueIdentifier>{0374141a-f951-43a3-87ec-b9d4cff41a3f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\debug">
-      <UniqueIdentifier>{9dd0e7a2-f90e-45e3-aba6-fb2fe92c11c0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\debug">
-      <UniqueIdentifier>{04fcdabd-61ef-4038-92e1-74623975ef98}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\globals">
       <UniqueIdentifier>{287c657d-0339-4cbe-a4fd-008c5421a650}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\stats">
+      <UniqueIdentifier>{9dd0e7a2-f90e-45e3-aba6-fb2fe92c11c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stats">
+      <UniqueIdentifier>{04fcdabd-61ef-4038-92e1-74623975ef98}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\imgui">
-      <UniqueIdentifier>{5670d7f9-25a6-4099-9163-1b0f722232bb}</UniqueIdentifier>
+      <UniqueIdentifier>{fa6c1297-5df1-4ee8-b74f-ef8cdb461a78}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -60,26 +60,26 @@
     <ClCompile Include="src\game\core\window.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
-    <ClCompile Include="src\vendor\imgui-sfml-2.1\imgui-SFML.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="src\vendor\imgui-1.76\imgui.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="src\vendor\imgui-1.76\imgui_draw.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="src\vendor\imgui-1.76\imgui_widgets.cpp">
-      <Filter>Source Files\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="src\game\debug\fps_counter.cpp">
-      <Filter>Source Files\debug</Filter>
-    </ClCompile>
-    <ClCompile Include="src\game\debug\debug_screen.cpp">
-      <Filter>Source Files\debug</Filter>
-    </ClCompile>
     <ClCompile Include="src\game\core\screen_manager.cpp">
       <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\stats\debug_screen.cpp">
+      <Filter>Source Files\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\stats\fps_counter.cpp">
+      <Filter>Source Files\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\imgui\imgui.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\imgui\imgui_draw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game\imgui\imgui-SFML.cpp">
+      <Filter>Source Files\imgui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -104,17 +104,17 @@
     <ClInclude Include="src\game\core\window.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
-    <ClInclude Include="src\game\debug\debug_screen.h">
-      <Filter>Header Files\debug</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game\debug\fps_counter.h">
-      <Filter>Header Files\debug</Filter>
-    </ClInclude>
     <ClInclude Include="src\game\core\screen.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
     <ClInclude Include="src\game\core\screen_manager.h">
       <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\stats\debug_screen.h">
+      <Filter>Header Files\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\stats\fps_counter.h">
+      <Filter>Header Files\stats</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -14,7 +14,7 @@ class Graphics
 
         // Make it non-copyable
         Graphics(const Graphics& graphics) = delete;
-        Graphics &operator=(const Graphics& graphics) = delete;
+        Graphics& operator=(const Graphics& graphics) = delete;
 
         // Gets the instance of the resource manager.
         static Graphics& getInstance();

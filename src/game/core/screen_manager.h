@@ -13,7 +13,7 @@ class ScreenManager
 
         // Make it non-copyable
         ScreenManager(const ScreenManager& scnmgr) = delete;
-        ScreenManager& operator= (const ScreenManager& scnmgr) = delete;
+        ScreenManager& operator=(const ScreenManager& scnmgr) = delete;
 
         // Gets the instance of the screen manager.
         static ScreenManager& getInstance();

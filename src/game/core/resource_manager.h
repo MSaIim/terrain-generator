@@ -14,7 +14,7 @@ class ResourceManager
 
         // Make it non-copyable
         ResourceManager(const ResourceManager& resmgr) = delete;
-        ResourceManager& operator= (const ResourceManager& resmgr) = delete;
+        ResourceManager& operator=(const ResourceManager& resmgr) = delete;
 
         // Gets the instance of the resource manager.
         static ResourceManager& getInstance();

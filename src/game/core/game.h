@@ -1,7 +1,7 @@
 #pragma once
 #include "game_base.h"
 #include "screen_manager.h"
-#include "../debug/debug_screen.h"
+#include "../stats/debug_screen.h"
 #include <iostream>
 #include <string>
 #include <math.h>
