@@ -13,12 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\map">
-      <UniqueIdentifier>{7b033fe7-a592-4a30-932d-d67847b9120d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\map">
-      <UniqueIdentifier>{97e7f59d-8011-4613-9df1-63e13f3273b9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\core">
       <UniqueIdentifier>{6e87acb3-84a4-4198-b143-6df743bf7e4d}</UniqueIdentifier>
     </Filter>
@@ -37,13 +31,16 @@
     <Filter Include="Source Files\imgui">
       <UniqueIdentifier>{fa6c1297-5df1-4ee8-b74f-ef8cdb461a78}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\map">
+      <UniqueIdentifier>{ddb1c4ba-4142-4a14-b88d-4ce7c03bc77e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\map">
+      <UniqueIdentifier>{3ce735ad-67f3-4c62-88a1-5d0606951503}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\game\main.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\game\map\terrain.cpp">
-      <Filter>Source Files\map</Filter>
     </ClCompile>
     <ClCompile Include="src\game\core\game.cpp">
       <Filter>Source Files\core</Filter>
@@ -78,11 +75,11 @@
     <ClCompile Include="src\vendor\imgui-sfml-2.1\imgui-SFML.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
+    <ClCompile Include="src\game\map\generator.cpp">
+      <Filter>Source Files\map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\game\map\terrain.h">
-      <Filter>Header Files\map</Filter>
-    </ClInclude>
     <ClInclude Include="src\game\core\game.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
@@ -109,6 +106,12 @@
     </ClInclude>
     <ClInclude Include="src\game\stats\fps_counter.h">
       <Filter>Header Files\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\map\generator.h">
+      <Filter>Header Files\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\map\map_types.h">
+      <Filter>Header Files\map</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
