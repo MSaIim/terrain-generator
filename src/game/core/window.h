@@ -1,6 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "../globals/constants.h"
+#include "imgui.h"
+#include "imgui-SFML.h"
 #include <string>
 
 class Window
@@ -43,4 +45,14 @@ class Window
 
         // Close window
         const void close();
+
+        // Draw functions
+        const void clear();
+        const void display();
+        const void renderImgui();
+
+        const void draw(const sf::Drawable& drawable, const sf::RenderStates& states = sf::RenderStates::Default);
+        const void draw(const sf::Vertex* vertices, std::size_t vertexCount, sf::PrimitiveType type, const sf::RenderStates& states = sf::RenderStates::Default);
+        const void draw(const sf::VertexBuffer& vertexBuffer, const sf::RenderStates& states = sf::RenderStates::Default);
+        const void draw(const sf::VertexBuffer& vertexBuffer, std::size_t firstVertex, std::size_t vertexCount, const sf::RenderStates& states = sf::RenderStates::Default);
 };

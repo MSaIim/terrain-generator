@@ -49,15 +49,21 @@ const bool ScreenManager::isScreenVisible(Screen& screen) {
     return isVisible;
 }
 
+void ScreenManager::setup() {
+    for (unsigned int i = 0; i < this->screens.size(); i++) {
+        this->screens.at(i)->setup();
+    }
+}
+
 void ScreenManager::update(const sf::Event& event, const float tickRate) {
-    for (size_t i = this->screens.size() - 1; i != (size_t)-1; i--) {
+    for (unsigned int i = 0; i < this->screens.size(); i++) {
         this->screens.at(i)->update(event, tickRate);
     }
 }
 
-void ScreenManager::draw(const float alpha) {
+void ScreenManager::draw(Window& window, const float alpha) {
     for (unsigned int i = 0; i < this->screens.size(); i++) {
-        this->screens.at(i)->draw(alpha);
+        this->screens.at(i)->draw(window, alpha);
     }
 }
 

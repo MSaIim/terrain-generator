@@ -1,8 +1,6 @@
 #include "game_base.h"
 
 GameBase::GameBase() {
-    Graphics::getInstance().setWindow(&this->window.getRenderer());
-
     // Load ImGui and set settings
     ImGui::SFML::Init(this->window.getRenderer(), false);
     ImGuiIO& io = ImGui::GetIO();
@@ -54,7 +52,7 @@ const bool GameBase::run() {
 
         // Draw everything
         const float alpha = accumulator / tickRate;
-        this->draw(alpha);
+        this->draw(this->window, alpha);
     }
 
     return true;

@@ -48,9 +48,6 @@
     <ClCompile Include="src\game\core\game.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\core\graphics.cpp">
-      <Filter>Source Files\core</Filter>
-    </ClCompile>
     <ClCompile Include="src\game\core\game_base.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
@@ -87,9 +84,6 @@
       <Filter>Header Files\map</Filter>
     </ClInclude>
     <ClInclude Include="src\game\core\game.h">
-      <Filter>Header Files\core</Filter>
-    </ClInclude>
-    <ClInclude Include="src\game\core\graphics.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
     <ClInclude Include="src\game\core\resource_manager.h">

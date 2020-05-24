@@ -3,7 +3,6 @@
 #include "imgui.h"
 #include "imgui-SFML.h"
 #include "window.h"
-#include "graphics.h"
 
 class GameBase
 {
@@ -18,7 +17,7 @@ class GameBase
         virtual const bool update(const sf::Event& event, const float tickRate) = 0;
 
         // Draws everything to the screen.
-        virtual void draw(const float alpha) = 0;
+        virtual void draw(Window& window, const float alpha) = 0;
 
     public:
         GameBase();

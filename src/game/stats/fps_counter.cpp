@@ -23,10 +23,4 @@ const int FPSCounter::getFpsValue() {
     return this->value;
 }
 
-const sf::Text& FPSCounter::getFpsText() {
-    this->update();
-    this->text.setString(std::to_string(this->value));
-    return this->text;
-}
-
 FPSCounter::~FPSCounter() { }

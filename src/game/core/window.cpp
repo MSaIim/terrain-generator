@@ -56,4 +56,32 @@ const void Window::close() {
     this->window.close();
 }
 
+const void Window::clear() {
+    this->window.clear();
+}
+
+const void Window::display() {
+    this->window.display();
+}
+
+const void Window::renderImgui() {
+    ImGui::SFML::Render(this->window);
+}
+
+const void Window::draw(const sf::Drawable& drawable, const sf::RenderStates& states) {
+    this->window.draw(drawable, states);
+}
+
+const void Window::draw(const sf::Vertex* vertices, std::size_t vertexCount, sf::PrimitiveType type, const sf::RenderStates& states) {
+    this->window.draw(vertices, vertexCount, type, states);
+}
+
+const void Window::draw(const sf::VertexBuffer& vertexBuffer, const sf::RenderStates& states) {
+    this->window.draw(vertexBuffer, states);
+}
+
+const void Window::draw(const sf::VertexBuffer& vertexBuffer, std::size_t firstVertex, std::size_t vertexCount, const sf::RenderStates& states) {
+    this->window.draw(vertexBuffer, firstVertex, vertexCount, states);
+}
+
 Window::~Window() { }

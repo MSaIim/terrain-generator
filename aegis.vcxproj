@@ -21,7 +21,6 @@
   <ItemGroup>
     <ClCompile Include="src\game\core\game.cpp" />
     <ClCompile Include="src\game\core\game_base.cpp" />
-    <ClCompile Include="src\game\core\graphics.cpp" />
     <ClCompile Include="src\game\core\resource_manager.cpp" />
     <ClCompile Include="src\game\core\screen_manager.cpp" />
     <ClCompile Include="src\game\core\window.cpp" />
@@ -37,7 +36,6 @@
   <ItemGroup>
     <ClInclude Include="src\game\core\game.h" />
     <ClInclude Include="src\game\core\game_base.h" />
-    <ClInclude Include="src\game\core\graphics.h" />
     <ClInclude Include="src\game\core\resource_manager.h" />
     <ClInclude Include="src\game\core\screen.h" />
     <ClInclude Include="src\game\core\screen_manager.h" />

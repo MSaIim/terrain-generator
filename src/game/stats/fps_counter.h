@@ -21,5 +21,4 @@ class FPSCounter
         ~FPSCounter();
 
         const int getFpsValue();
-        const sf::Text& getFpsText();
 };

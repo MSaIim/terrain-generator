@@ -2,6 +2,7 @@
 #include "game_base.h"
 #include "screen_manager.h"
 #include "../stats/debug_screen.h"
+#include "window.h"
 #include <iostream>
 #include <string>
 #include <math.h>
@@ -22,5 +23,5 @@ class Game : public GameBase
         const bool update(const sf::Event& event, const float tickRate) override;
 
         // Draws everything to the screen.
-        void draw(const float alpha) override;
+        void draw(Window& window, const float alpha) override;
 };

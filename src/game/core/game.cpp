@@ -16,13 +16,13 @@ const bool Game::update(const sf::Event& event, const float tickRate) {
     return true;
 }
 
-void Game::draw(const float alpha) {
-    Graphics::getInstance().clear();
+void Game::draw(Window& window, const float alpha) {
+    window.clear();
 
-    ScreenManager::getInstance().draw(alpha);
-    Graphics::getInstance().renderImgui();
+    ScreenManager::getInstance().draw(window, alpha);
+    window.renderImgui();
 
-    Graphics::getInstance().display();
+    window.display();
 }
 
 Game::~Game() { }

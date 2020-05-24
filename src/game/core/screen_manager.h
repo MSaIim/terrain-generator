@@ -1,5 +1,6 @@
 #pragma once
 #include "screen.h"
+#include "window.h"
 
 class ScreenManager
 {
@@ -30,9 +31,12 @@ class ScreenManager
         // Removes a screen from the screen list.
         void removeScreen(Screen& screen);
 
+        // Sets up anything needed for the screen.
+        void setup();
+
         // Updates the all the screens in the list in reverse order (last added screen updates first).
         void update(const sf::Event& event, const float tickRate);
 
         // Draws all the screens in the list in the order they were added.
-        void draw(const float alpha);
+        void draw(Window& window, const float alpha);
 };
