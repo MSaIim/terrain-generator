@@ -1,14 +1,14 @@
 #pragma once
 #include "fps_counter.h"
 
-FPSCounter::FPSCounter(): value(0), frame(0) {
+FpsCounter::FpsCounter(): value(0), frame(0) {
     this->text.setFont(ResourceManager::getInstance().loadFont(FontPaths::HAPPY));
     this->text.setCharacterSize(26);
     this->text.setFillColor(sf::Color::White);
     this->text.setPosition(15, 10);
 }
 
-const void FPSCounter::update() {
+const void FpsCounter::update() {
     if (this->clock.getElapsedTime().asSeconds() >= 1.f) {
         value = frame;
         frame = 0;
@@ -18,9 +18,9 @@ const void FPSCounter::update() {
     ++frame;
 }
 
-const int FPSCounter::getFpsValue() {
+const int FpsCounter::getFpsValue() {
     this->update();
     return this->value;
 }
 
-FPSCounter::~FPSCounter() { }
+FpsCounter::~FpsCounter() { }

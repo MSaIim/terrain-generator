@@ -75,7 +75,7 @@
     <ClCompile Include="src\vendor\imgui-sfml-2.1\imgui-SFML.cpp">
       <Filter>Source Files\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="src\game\map\generator.cpp">
+    <ClCompile Include="src\game\map\map_generator.cpp">
       <Filter>Source Files\map</Filter>
     </ClCompile>
   </ItemGroup>
@@ -107,13 +107,13 @@
     <ClInclude Include="src\game\stats\fps_counter.h">
       <Filter>Header Files\stats</Filter>
     </ClInclude>
-    <ClInclude Include="src\game\map\generator.h">
-      <Filter>Header Files\map</Filter>
-    </ClInclude>
     <ClInclude Include="src\game\map\map_types.h">
       <Filter>Header Files\map</Filter>
     </ClInclude>
     <ClInclude Include="src\game\map\map_options.h">
+      <Filter>Header Files\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\map\map_generator.h">
       <Filter>Header Files\map</Filter>
     </ClInclude>
   </ItemGroup>

@@ -25,7 +25,7 @@
     <ClCompile Include="src\game\core\screen_manager.cpp" />
     <ClCompile Include="src\game\core\window.cpp" />
     <ClCompile Include="src\game\main.cpp" />
-    <ClCompile Include="src\game\map\generator.cpp" />
+    <ClCompile Include="src\game\map\map_generator.cpp" />
     <ClCompile Include="src\game\stats\debug_screen.cpp" />
     <ClCompile Include="src\game\stats\fps_counter.cpp" />
     <ClCompile Include="src\vendor\imgui-1.76\imgui.cpp" />
@@ -41,7 +41,7 @@
     <ClInclude Include="src\game\core\screen_manager.h" />
     <ClInclude Include="src\game\core\window.h" />
     <ClInclude Include="src\game\globals\constants.h" />
-    <ClInclude Include="src\game\map\generator.h" />
+    <ClInclude Include="src\game\map\map_generator.h" />
     <ClInclude Include="src\game\map\map_options.h" />
     <ClInclude Include="src\game\map\map_types.h" />
     <ClInclude Include="src\game\stats\debug_screen.h" />

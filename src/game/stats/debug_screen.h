@@ -24,7 +24,7 @@ class DebugScreen : public Screen
         ImVec4 titleBgActiveColor;
 
         // Debug items
-        FPSCounter fpsCounter;
+        FpsCounter fpsCounter;
 
     public:
         DebugScreen();

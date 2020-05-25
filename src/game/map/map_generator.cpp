@@ -1,20 +1,20 @@
-#include "generator.h"
+#include "map_generator.h"
 
-const std::vector<int> Generator::generateMap(const MapOptions& mapOptions) {
+const std::vector<int> MapGenerator::generate(const MapOptions& mapOptions) {
     std::vector<int> map;
 
-    Generator::getTileCounts(mapOptions);
+    MapGenerator::getTileCounts(mapOptions);
 
     return map;
 }
 
-const std::vector<Generator::TileCount> Generator::getTileCounts(const MapOptions& mapOptions) {
-    std::vector<Generator::TileCount> tileCounts;
+const std::vector<MapGenerator::TileCount> MapGenerator::getTileCounts(const MapOptions& mapOptions) {
+    std::vector<MapGenerator::TileCount> tileCounts;
 
     // Random number generator
     std::random_device randomDevice;
     std::mt19937 randomEngine(randomDevice());
-    std::uniform_int_distribution<> blockDistribution(0, static_cast<int>(Generator::BlockType::Count) - 1);
+    std::uniform_int_distribution<> blockDistribution(0, static_cast<int>(MapGenerator::BlockType::Count) - 1);
     
     // Get map options
     int worldSize = mapOptions.worldWidth * mapOptions.worldHeight;
@@ -32,7 +32,7 @@ const std::vector<Generator::TileCount> Generator::getTileCounts(const MapOption
             
             // Get random block type and random number of tiles
             const int numberOfTiles = static_cast<int>(tileDistribution(randomEngine));
-            Generator::BlockType blockType = static_cast<Generator::BlockType>(blockDistribution(randomEngine));
+            MapGenerator::BlockType blockType = static_cast<MapGenerator::BlockType>(blockDistribution(randomEngine));
 
             // Add tile count to vector
             tileCounts.push_back({ mapOptions.tiles[i], blockType, numberOfTiles });

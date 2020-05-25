@@ -10,7 +10,7 @@ void Game::setup() {
     mapOptions.worldHeight = 10;
     mapOptions.tiles = { DefaultMap::GRASS, DefaultMap::WATER };
     mapOptions.percentages = { 50, 50 };
-    Generator::generateMap(mapOptions);
+    MapGenerator::generate(mapOptions);
 }
 
 const bool Game::update(const sf::Event& event, const float tickRate) {

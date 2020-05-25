@@ -4,7 +4,7 @@
 #include "../globals/constants.h"
 #include <math.h>
 
-class FPSCounter
+class FpsCounter
 {
     private:
         sf::Text text;
@@ -16,8 +16,8 @@ class FPSCounter
         const void update();
 
     public:
-        FPSCounter();
-        ~FPSCounter();
+        FpsCounter();
+        ~FpsCounter();
 
         const int getFpsValue();
 };

@@ -4,19 +4,19 @@
 #include <string>
 #include <random>
 
-class Generator
+class MapGenerator
 {
     private:
         enum class BlockType { SQUARE, CIRLCE, LINE, Count = 3 };
 
         struct TileCount {
             int tileType;
-            Generator::BlockType blockType;
+            MapGenerator::BlockType blockType;
             int count;
         };
 
-        static const std::vector<Generator::TileCount> getTileCounts(const MapOptions& mapOptions);
+        static const std::vector<MapGenerator::TileCount> getTileCounts(const MapOptions& mapOptions);
 
     public:
-        static const std::vector<int> generateMap(const MapOptions& mapOptions);
+        static const std::vector<int> generate(const MapOptions& mapOptions);
 };
