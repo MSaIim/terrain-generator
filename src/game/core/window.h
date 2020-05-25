@@ -1,8 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "../globals/constants.h"
-#include "imgui.h"
 #include "imgui-SFML.h"
+#include "../globals/constants.h"
 #include <string>
 
 class Window

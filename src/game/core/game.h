@@ -1,11 +1,10 @@
 #pragma once
 #include "game_base.h"
+#include "window.h"
 #include "screen_manager.h"
 #include "../stats/debug_screen.h"
-#include "window.h"
-#include <iostream>
-#include <string>
-#include <math.h>
+#include "../map/generator.h"
+#include "../map/map_types.h"
 
 class Game : public GameBase
 {

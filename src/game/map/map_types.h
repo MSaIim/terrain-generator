@@ -1,5 +1,6 @@
 #pragma once
 
-enum DefaultMapTypes {
-
+enum DefaultMap {
+    GRASS = 42,
+    WATER = 55
 };

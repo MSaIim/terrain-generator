@@ -1,10 +1,9 @@
 #pragma once
-#include "../core/screen.h"
 #include "imgui.h"
-#include "imgui-SFML.h"
-#include "fps_counter.h"
-#include "../globals/constants.h"
 #include "../core/window.h"
+#include "../core/screen.h"
+#include "../globals/constants.h"
+#include "fps_counter.h"
 #include <string>
 
 class DebugScreen : public Screen

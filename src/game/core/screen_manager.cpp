@@ -23,6 +23,7 @@ void ScreenManager::addScreen(Screen& screen) {
 
     if (!isVisible) {
         this->screens.push_back(&screen);
+        this->screens.at(this->screens.size() - 1)->setup();
     }
 }
 
@@ -47,12 +48,6 @@ const bool ScreenManager::isScreenVisible(Screen& screen) {
     }
 
     return isVisible;
-}
-
-void ScreenManager::setup() {
-    for (unsigned int i = 0; i < this->screens.size(); i++) {
-        this->screens.at(i)->setup();
-    }
 }
 
 void ScreenManager::update(const sf::Event& event, const float tickRate) {

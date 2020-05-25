@@ -42,6 +42,7 @@
     <ClInclude Include="src\game\core\window.h" />
     <ClInclude Include="src\game\globals\constants.h" />
     <ClInclude Include="src\game\map\generator.h" />
+    <ClInclude Include="src\game\map\map_options.h" />
     <ClInclude Include="src\game\map\map_types.h" />
     <ClInclude Include="src\game\stats\debug_screen.h" />
     <ClInclude Include="src\game\stats\fps_counter.h" />

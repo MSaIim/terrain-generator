@@ -4,6 +4,13 @@ Game::Game() { }
 
 void Game::setup() { 
     ScreenManager::getInstance().addScreen(debugScreen);
+
+    MapOptions mapOptions;
+    mapOptions.worldWidth = 10;
+    mapOptions.worldHeight = 10;
+    mapOptions.tiles = { DefaultMap::GRASS, DefaultMap::WATER };
+    mapOptions.percentages = { 50, 50 };
+    Generator::generateMap(mapOptions);
 }
 
 const bool Game::update(const sf::Event& event, const float tickRate) {

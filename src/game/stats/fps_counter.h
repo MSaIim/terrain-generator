@@ -2,7 +2,6 @@
 #include <SFML/Graphics.hpp>
 #include "../core/resource_manager.h"
 #include "../globals/constants.h"
-#include <string>
 #include <math.h>
 
 class FPSCounter
