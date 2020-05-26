@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include <vector>
+#include <map>
 
 struct MapOptions
 {
@@ -11,6 +11,5 @@ struct MapOptions
     std::string sheetFilePath;
     int rows;
     int columns;
-    std::vector<int> tiles;
-    std::vector<int> percentages;
+    std::map<int, int> tileData;
 };

@@ -8,8 +8,7 @@ void Game::setup() {
     MapOptions mapOptions;
     mapOptions.worldWidth = 10;
     mapOptions.worldHeight = 10;
-    mapOptions.tiles = { DefaultMap::GRASS, DefaultMap::WATER };
-    mapOptions.percentages = { 50, 50 };
+    mapOptions.tileData = { {DefaultMap::GRASS, 50}, {DefaultMap::WATER, 50} };
     MapGenerator::generate(mapOptions);
 }
 
