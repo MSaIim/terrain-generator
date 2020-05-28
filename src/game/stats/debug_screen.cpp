@@ -7,8 +7,8 @@ DebugScreen::DebugScreen(): width(150), height(100), x(15), y(15) {
 
     // Title settings
     this->titlePosition = ImVec2(0.5, 0.5);
-    this->titleBgColor = ImVec4(1.0f, 0.4f, 0.4f, 1.0f);
-    this->titleBgActiveColor = ImVec4(1.0f, 0.4f, 0.4f, 1.0f);
+    this->titleBgColor = ImVec4(0.0f, 0.4f, 0.4f, 1.0f);
+    this->titleBgActiveColor = ImVec4(0.0f, 0.4f, 0.4f, 1.0f);
 }
 
 void DebugScreen::setup() {

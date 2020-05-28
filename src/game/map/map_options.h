@@ -4,12 +4,12 @@
 
 struct MapOptions
 {
-    MapOptions(): worldWidth(0), worldHeight(0), sheetFilePath(""), rows(0), columns(0) { }
+    MapOptions(): worldWidth(0), worldHeight(0), sheetFilePath(""), sheetRows(0), sheetColumns(0) { }
 
     int worldWidth;
     int worldHeight;
     std::string sheetFilePath;
-    int rows;
-    int columns;
+    int sheetRows;
+    int sheetColumns;
     std::map<int, int> tileData;
 };

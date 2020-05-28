@@ -12,7 +12,7 @@ class MapGenerator
 {
     private:
         enum class BlockType { SQUARE, LINE, Count = 2 };
-        enum class LineDirection { UP, DOWN, LEFT, RIGHT, Count = 4 };
+        enum class Direction { UP, DOWN, LEFT, RIGHT, Count = 4 };
 
         struct TileData {
             int tileType;

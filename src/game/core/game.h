@@ -5,11 +5,14 @@
 #include "../stats/debug_screen.h"
 #include "../map/map_generator.h"
 #include "../map/map_types.h"
+#include "../map/map_view.h"
+#include "../globals/constants.h"
 
 class Game : public GameBase
 {
     private: 
         DebugScreen debugScreen;
+        MapView mapView;
 
     public:
         Game();

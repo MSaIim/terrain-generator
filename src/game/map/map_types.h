@@ -1,8 +1,8 @@
 #pragma once
 
 enum DefaultMap {
-    GRASS = 1,
-    WATER = 2,
-    DIRT = 3,
-    STONE = 4
+    GRASS = 0,
+    WATER = 1,
+    DIRT = 2,
+    STONE = 3
 };

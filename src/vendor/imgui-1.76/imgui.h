@@ -35,6 +35,7 @@ Index of this file:
 
 */
 
+#pragma warning( disable : 6011 26495 )
 #pragma once
 
 // Configuration file with compile-time options (edit imconfig.h or #define IMGUI_USER_CONFIG to your own filename)

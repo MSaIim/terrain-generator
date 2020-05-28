@@ -7,7 +7,7 @@ const std::vector<int> MapGenerator::generate(const MapOptions& mapOptions) {
     // Build the map using the tile data
     std::vector<int> tiles = MapGenerator::build(mapOptions, tileData);
 
-    MapGenerator::print(mapOptions, tileData, tiles);
+    //MapGenerator::print(mapOptions, tileData, tiles);
     return tiles;
 }
 
@@ -100,8 +100,8 @@ const std::vector<int>& MapGenerator::createLineBlock(const MapOptions& mapOptio
     // Get random direction (1 = up, 2 = down, 3 = left, 4 = right)
     std::random_device randomDevice;
     std::mt19937 randomEngine(randomDevice());
-    std::uniform_int_distribution<> distribution(0, static_cast<int>(MapGenerator::LineDirection::Count) - 1);
-    MapGenerator::LineDirection direction = static_cast<MapGenerator::LineDirection>(distribution(randomEngine));
+    std::uniform_int_distribution<> distribution(0, static_cast<int>(MapGenerator::Direction::Count) - 1);
+    MapGenerator::Direction direction = static_cast<MapGenerator::Direction>(distribution(randomEngine));
 
     // Setup variables
     int index = startPosition;
@@ -113,16 +113,16 @@ const std::vector<int>& MapGenerator::createLineBlock(const MapOptions& mapOptio
             tiles[index] = tileData.tileType;
 
             switch (direction) {
-                case MapGenerator::LineDirection::UP:
+                case MapGenerator::Direction::UP:
                     index -= mapOptions.worldWidth;
                     break;
-                case MapGenerator::LineDirection::DOWN:
+                case MapGenerator::Direction::DOWN:
                     index += mapOptions.worldWidth;
                     break;
-                case MapGenerator::LineDirection::LEFT:
+                case MapGenerator::Direction::LEFT:
                     index -= 1;
                     break;
-                case MapGenerator::LineDirection::RIGHT:
+                case MapGenerator::Direction::RIGHT:
                     index += 1;
                     break;
             }

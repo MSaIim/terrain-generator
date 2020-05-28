@@ -12,8 +12,9 @@ namespace ImagePaths
     static const std::string APP_ICON = "assets/icon.png";
 }
 
-namespace TexturePaths
+namespace SpriteSheetPaths
 {
+    static const std::string TEST_SPRITESHEET = "assets/spritesheets/tiles.png";
     static const std::string GRASS_SPRITESHEET = "assets/spritesheets/grass.png";
 }
 
