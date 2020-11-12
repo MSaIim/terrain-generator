@@ -1,4 +1,4 @@
-# ![](https://i.imgur.com/FaK3csl.png) Aegis Terrain Generator
+# ![](https://i.imgur.com/FaK3csl.png?1) Aegis Terrain Generator
 
 Simple 2D terrain generator written in C++ using SFML.
 
